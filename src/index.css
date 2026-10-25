@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-gold: #c59b27;
+  --primary-gold-light: #e5b94c;
+  --primary-gold-dark: #9e7a17;
+  --dark-navy: #0b1325;
+  --slate-dark: #1e293b;
+  --luxury-gradient: linear-gradient(135deg, #c59b27 0%, #f3d47d 50%, #c59b27 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafaf9;
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-serif, .luxury-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c59b27;
+}
+
+/* Luxury Utilities */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #c59b27 0%, #eab308 50%, #9e7a17 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #c59b27 0%, #dfb33e 100%);
+}
+
+.luxury-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.luxury-card-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px -10px rgba(15, 23, 42, 0.15), 0 0 20px -5px rgba(197, 155, 39, 0.2);
+}
