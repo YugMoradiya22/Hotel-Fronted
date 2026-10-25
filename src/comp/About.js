@@ -1,9 +1,9 @@
 import React from 'react';
-import Hero from '../images/traveling.jpg';   
+import Hero from '../images/traveling.jpg';
 import SecondaryImg from '../images/traveling2.jpg';
 import { Link } from 'react-router-dom';
 import { Sparkles, Shield, Compass, ArrowRight } from 'lucide-react';
-
+// hi ii
 function AboutUs() {
   return (
     <section className="py-24 bg-white relative overflow-hidden">
@@ -12,7 +12,7 @@ function AboutUs() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
+
           {/* Left Column: Editorial Content */}
           <div className="lg:col-span-6 space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200 text-amber-700 text-xs uppercase tracking-[0.25em] font-bold">
@@ -78,7 +78,7 @@ function AboutUs() {
           {/* Right Column: Overlapping Architectural Visuals */}
           <div className="lg:col-span-6 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              
+
               {/* Primary Image */}
               <div className="w-4/5 h-80 sm:h-96 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                 <img
